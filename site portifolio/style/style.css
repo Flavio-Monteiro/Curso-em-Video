@@ -1,0 +1,178 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+    
+}
+html{
+    
+  
+}
+
+@font-face
+{
+
+font-family: 'Hell';
+src: url('../fonts/Rockit.otf')format('opentype');
+font-family: 'rockit';
+
+src: url('../fonts/stormfaze.otf')format("opentype");
+font-family: "Storm";
+}
+
+:root
+{
+--storm:"Storm";
+--cor-001: #051933;
+--cor-01:  #140570;
+--cor-02:  #0B426B;
+--cor-03:  #6EBDEB;
+--cor-04:  #375CB8;
+--cor-05:  #041C39;
+--cor-06:  #dfdbdb;
+--cor-07: #0D0D0D;
+--cor-08: #262626;
+--cor-09: #595959;
+--cor-10: #A6A6A6;
+--cor-11: #a1a1a1;
+--cor-12: #FFF159;  
+--cor-13: #2E89F9;      
+}
+
+@media(max-width:800px){
+    .cabecalho,.link-nav{
+        font-size: .7em;
+        
+    }
+    body{
+        font-size: .7em;
+        
+        
+        
+    }
+}
+
+body{
+    background-image: url("D:/Repositorio Github/HTML-CSS/site portifolio/image/sci-fy/09.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.cabecalho{
+    background-image: url("D:/Repositorio Github/HTML-CSS/site portifolio/image/sci-fy/11.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+.texto_cabecalho h1{
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    font-family: var(--storm);
+    padding-top: 10px;
+}
+.navegacao{
+    text-align: center;
+    background-image: linear-gradient(to right,#0f161e9f,#404040d3,#0f161eda);
+    opacity: 80%;
+}
+.link-nav a
+{  
+    text-decoration: none;
+    font-size: 2em;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+.container{
+   
+}
+
+.containers1
+{   
+    height: 400px;
+    background-color: #051933ad;
+    padding: 10px;
+}
+.containers2
+{
+    height: 400px;
+    background-color: #2c7b8f62;
+    padding: 10px;
+}
+.containers3
+{
+    height: 400px;
+    background-color: #1b7e30a8;
+    padding: 10px;
+}
+.containers4
+{
+    height: 400px;
+    background-color: #b1ae1aa8;
+    padding: 10px;
+}
+.containers1,.containers2,.containers3,.containers4 ,h1,p{
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    font-size: 1.5em;
+}
+
+
+.rodape
+{
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+
+background-image: linear-gradient(to right,#0f161e9f,#404040d3,#0f161eda);
+opacity: 80%;
+}
+.rodape a:hover
+{
+text-decoration: underline;
+}
+.conteudo-blog
+{
+padding: 5px;
+}
+.informacoes_e_contatos{
+display: flex;
+justify-content: space-evenly;
+align-items:baseline;
+width: 100vw;
+padding: 5px;
+margin: 0 auto;
+}
+.conteudo-blog{
+  padding: 20px;
+}
+.conteudo-blog li{
+list-style-type: none;
+}
+.conteudo-blog a{
+text-decoration: none;
+color: white;
+font-family: var(--font-Alternativa);
+font-weight: normal;
+letter-spacing: 2px;
+}
+.conteudo-blog h3{
+font-family: var(--font-Babas);
+font-size: 1.4em;
+font-weight: normal;
+color: rgb(253, 253, 253);
+}
+.tecnologias img
+{
+  width: 50px;
+  height: 50px;
+  padding-right: 5px;
+}
