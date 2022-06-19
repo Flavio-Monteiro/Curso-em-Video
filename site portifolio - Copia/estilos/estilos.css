@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600;700;800;900 & display=swap');
+@font-face
+{
+
+font-family: 'Hell';
+src: url('../fonts/Rockit.otf')format('opentype');
+font-family: 'rockit';
+
+src: url('../fonts/stormfaze.otf')format("opentype");
+font-family: "Storm";
+}
+:root
+{
+--font-Opens-Sans: 'Open Sans', sans-serif;
+--font-Babas: 'Bebas Neue', cursive;
+--font-cursiva: 'Berkshire Swash', cursive;;
+--font-Alternativa: 'Inter', sans-serif;
+--font-padrao: 'bebas nue', cursive ;
+--font-destaque: 'Vanilla';
+--font-nova04: 'rockit';
+--storm:"Storm";
+--cor-001: #051933;
+--cor-01:  #140570;
+--cor-02:  #0B426B;
+--cor-03:  #6EBDEB;
+--cor-04:  #375CB8;
+--cor-05:  #041C39;
+--cor-06:  #dfdbdb;
+--cor-07: #0D0D0D;
+--cor-08: #262626;
+--cor-09: #595959;
+--cor-10: #A6A6A6;
+--cor-11: #a1a1a1;
+--cor-12: #FFF159;  
+--cor-13: #2E89F9;      
+}
+
+*{
+padding: 0px;
+margin: 0px;
+
+}
+html{
+  padding: 0px;
+  margin: 0px;
+
+overflow-x:hidden;
+}
+/*----------------------------------------------*/
+/* SEÇÃO BODY */
+body
+{
+background: url("D:/Meus Sites HTML/site portifolio - Copia/imagens/sci-fy/05.jpg");
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+margin: 0px;
+padding: 0px;
+}
+/*----------------------------------------------*/
+/* SEÇÃO HEADER */
+.cabecalho
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("D:/Meus Sites HTML/site portifolio - Copia/imagens/sci-fy/11.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px;
+  padding: 0px;
+  height: 20vh;
+  width: 100%;
+  opacity: 80%;
+}
+
+
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:3vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+
+.navegacao
+{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 100vw;
+height: 150px;
+}
+.botao_navegacao
+{
+flex-wrap: wrap;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+}
+.btn{
+position: relative;
+display: block;
+color: white;
+font-size: 14px;
+font-family: "montserrat";
+text-decoration: none;
+border: 2px solid #ff7675;
+padding: 15px 40px;
+text-transform: uppercase;
+overflow: hidden;
+transition: 1s all ease;
+margin: 15px;
+}
+.btn::before
+{
+background: #302d2d;
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: -1;
+transition: all 0.6s ease;
+}
+.btn1::before
+{
+width: 0%;
+height: 100%;
+}
+.btn1:hover::before
+{
+width: 100%;
+}
+.btn2::before
+{
+width: 100%;
+height: 0%;
+}
+.btn2:hover::before
+{
+height: 100%;
+}
+.btn3::before{
+width: 100%;
+height: 0%;
+transform: translate(-50%,-50%) rotate(45deg);
+}
+.btn3:hover::before
+{
+height: 380%;
+}
+.btn4::before{
+width: 100%;
+height: 0%;
+transform: translate(-50%,-50%) rotate(-45deg);
+}
+.btn4:hover::before{
+height: 380%;
+}
+
+/*----------------------------------------------*/
+.flex-itens a
+{
+color: rgb(60, 172, 216);
+font-size: 1.5em;
+font-family: var(--font-Babas);
+font-weight: bold;
+text-decoration: none;
+margin: 10px;
+padding: 0px 10px  0px 10px;
+border-radius: 4px; 
+}
+.navegacao a:hover
+{   
+color: rgb(103, 121, 170);
+background-color: rgb(14, 13, 13);
+transition-duration: 0.5s; 
+opacity: 90%;
+}
+/*----------------------------------------------*/
+/* SEÇÃO MAIN */
+.principal
+{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width:100vw ;
+}
+.container 
+{
+height: 150px;
+}
+.entrar_animado
+{
+font-family: Helvetica;
+letter-spacing: 0.2em;
+font-weight: 600;
+font-size: 100px;
+text-align: center;
+color: #cacaca;
+cursor: pointer;
+outline: 3px solid;
+outline-color: rgba(71, 126, 232,0.5);
+outline-offset: 70px;
+transition: all 700ms cubic-bezier(0.2, 0, 0, 0.8);
+border-radius: 3px;
+}
+.entrar_animado:hover 
+{
+color: rgba(71, 126, 232, 0.7);
+outline-color: rgba(71, 126, 232, 0);
+outline-offset: 300px;
+}
+.btn_social{
+width: 100vw;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+/*background-image: linear-gradient( to left, var(--cor-11),white, var(--cor-11));*/
+background-color: #020a14c7;
+}
+.navbar
+{
+display: flex;
+}
+.box
+{
+width: 65px;
+height: 68px;
+display: flex;
+align-items: center;
+padding: 5px;
+margin: 0.6rem;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+transition: all .4s ease;
+font-size: 25px;
+}
+.box:hover
+{
+width: 200px;
+background: #c32aa3;
+border-radius: 35px;
+color: #fff;
+box-shadow: 0 0 50px #b315917c;
+}
+.box:nth-child(2):hover
+{
+background: #25d366;
+box-shadow: 0 0 50px #25d3657e;
+}
+.box:nth-child(3):hover
+{
+background: #1877f2;
+box-shadow: 0 0 50px #1876f285;
+}
+.box:nth-child(4):hove
+r{
+background: #1da1f2;
+box-shadow: 0 0 50px #1da0f280;
+}
+.navbar p
+{
+transform: translate(60px);
+}
+.box .icon
+{
+position: absolute;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+border-radius: 50%;
+margin-right: 10px;
+transition: all .4s ease;
+}
+.instagram{
+background-color: #c32aa3;
+}
+.whatsapp{
+background-color: #25d366;
+}
+.facebook{
+background-color: #1877f2;
+}
+.twitter{
+background-color: #1da1f2;
+}
+.box:hover .icon{
+background: #fff;
+color: #3b3b3b;
+box-shadow: 0 0 20px rgba(0,0,0,0.26);
+}
+.flavio_monteiro
+{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+width: 100vw;
+height: 30vh;
+}
+.flavio_monteiro h1{
+color: white;
+text-align: center;
+font-size: 4em;
+font-family: var(--storm);
+opacity: 80%;
+letter-spacing: 12px;
+padding-left: 0px;
+}
+.web_developer{
+display: flex;
+justify-content: center;
+width: 100vw;
+height: 150px;
+}.web_developer_texto h1{
+text-align: center;
+color: white;
+font-family: var(--storm);
+font-size: 4em;
+opacity: 70%;
+letter-spacing: 8px;
+}
+.rodape
+{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 100vw;
+background-image: linear-gradient(to right,#0f161e9f,#404040d3,#0f161eda);
+opacity: 80%;
+}
+.rodape a:hover
+{
+text-decoration: underline;
+}
+.conteudo-blog
+{
+padding: 5px;
+}
+.informacoes_e_contatos{
+display: flex;
+justify-content: space-evenly;
+align-items:baseline;
+width: 100vw;
+padding: 5px;
+margin: 0 auto;
+}
+.conteudo-blog{
+  padding: 20px;
+}
+.conteudo-blog li{
+list-style-type: none;
+}
+.conteudo-blog a{
+text-decoration: none;
+color: white;
+font-family: var(--font-Alternativa);
+font-weight: normal;
+letter-spacing: 2px;
+}
+.conteudo-blog h3{
+font-family: var(--font-Babas);
+font-size: 1.4em;
+font-weight: normal;
+color: rgb(253, 253, 253);
+}
+.tecnologias img
+{
+  width: 50px;
+  height: 50px;
+  padding-right: 5px;
+}
+.paralax_container{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+background-image: url("D:/Meus Sites HTML/site portifolio - Copia/imagens/sci-fy/01.jpg");
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+margin: 0px;
+padding: 0px;
+border: 0px;  
+}
+.paralax_item{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 30%;
+background-image: linear-gradient(to right,#0f161e9f,#404040d3,#0f161eda);
+}
+
+.paralax_item h1{
+font-family: var(--storm);
+font-size: 3em;
+color: white;
+opacity: 60%;
+text-shadow: 5px 5px 5px rgba(56, 56, 56, 0.87);
+text-align: center;
+
+}
+
