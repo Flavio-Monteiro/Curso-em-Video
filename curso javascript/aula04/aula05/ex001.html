@@ -7,20 +7,45 @@
     <title>Document</title>
 </head>
 <style>
+    html{
+        height: 100%;
+    }
     body{
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100%;
+        font-size: 1.9em;
+        text-align: center;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #125B50;
         font-family:sans-serif ;
         color: #FAF5E4;
-        font-size: 1.2em;
+        height: 100vh;
 
     }
+    section{
+      
+        width: 900px;
+        height: 250px;
+       
+    }
     p{
-        color: rgb(120, 114, 126);
+        color: rgb(177, 171, 183);
     }
 </style>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>já me livrei da maldição.</p>
+    <main>
+        <section>
+            <h1>Olá, Mundo!</h1>
+            <p>aprendendo Javascript com professor Gustavo Guanabara do Curso em vídeo</p>
+        </section>
+    </main>
+   
     <script>
         window.alert('minha primeira mensagem.')
         window.confirm('esta gostando do curso de Js?')
