@@ -1,0 +1,7 @@
+COMO FORMATAR "STRINGS"
+
+s.length = quantos caracters a string tem
+s.toUperCase() = colocar para letras" MAIUSCULAS"
+s.toLowerCase() = colocar para "minusculas"
+
+para usar os TemplatesStrings, usa-se o acento grave `  (crase)
